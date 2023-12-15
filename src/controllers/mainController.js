@@ -22,7 +22,7 @@ const controller = {
 		const result= []; // Inicializar un array vacío llamado 'result' para almacenar los resultados de la búsqueda
 		// Iterar a través de cada producto en el array 'products' y verificar si el nombre del producto incluye la palabra clave de búsqueda
 		products.forEach(product => {
-			if (product.name.includes(busqueda)) {
+			if (product.name.toLowerCase().includes(busqueda.toLowerCase())) {
 				result.push(product);
 			}
 		});
