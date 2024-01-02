@@ -36,7 +36,7 @@ const controller = {
 	store: (req, res) => {
 		const products =  getJson();
 		const product ={
-	    id : (products.length - 1) + 1,
+	    id: products[products.length - 1].id + 1,
 		name : req.body.name.trim(),
 		price: +req.body.price,
 		discount: +req.body.discount,
