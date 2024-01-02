@@ -42,7 +42,7 @@ const controller = {
 		discount: +req.body.discount,
 		category: req.body.category,
 		description: req.body.description.trim(),
-		image : "",
+		image : req.file ? req.file.filename : "default-image.png",
 	}; 
 		
 		products.push(product);
@@ -62,7 +62,7 @@ const controller = {
 	// Update - Method to update
 	update: (req, res) => {
 		const {id}= req.params;
-		const {name,price,discount,category,description,image} = req.body;
+		const {name,price,discount,category,description} = req.body;
 		const products =  getJson();
 		const nuevoArray = products.map(product => {
 			if(product.id == id){
@@ -73,7 +73,7 @@ const controller = {
 					discount:+discount,
 					category,
 					description:description.trim(),
-					image: image ? image : product.image
+					image: req.file ? req.file.filename : product.image
 				}
 			}
 			return product
