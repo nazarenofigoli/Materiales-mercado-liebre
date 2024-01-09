@@ -35,6 +35,8 @@ register: (req, res) => {
     } else {
     // Si hay errores, volvemos al formulario con los mensajes.
     res.render('registro', { errors: errors.mapped(), old: req.body });
+   /* res.send(errors.mapped())*/
+    
     }
 }}
 
