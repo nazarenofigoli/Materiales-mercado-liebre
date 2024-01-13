@@ -1,1 +1,26 @@
-[{"nombre":"Nazareno","apellido":"Figoli","email":"nazareno@gmail.com","contraseña":"1234"},{"nombre":"Nazareno","apellido":"Figoli","email":"nazarenofigoli69@gmail.com","contraseña":"123456789"},{"nombre":"More","apellido":"Figo","email":"more@gmail.com","contraseña":"1234"},{"nombre":"Nazareno","apellido":"hoswewd","email":"nazare@gmail.com","contraseña":"123456"}]
+[
+  {
+    "nombre": "Nazareno",
+    "apellido": "Figoli",
+    "email": "nazareno@gmail.com",
+    "contraseña": "1234"
+  },
+  {
+    "nombre": "Nazareno",
+    "apellido": "Figoli",
+    "email": "nazarenofigoli69@gmail.com",
+    "contraseña": "123456789"
+  },
+  {
+    "nombre": "More",
+    "apellido": "Figo",
+    "email": "more@gmail.com",
+    "contraseña": "1234"
+  },
+  {
+    "nombre": "Nazareno",
+    "apellido": "hoswewd",
+    "email": "nazare@gmail.com",
+    "contraseña": "123456"
+  }
+]

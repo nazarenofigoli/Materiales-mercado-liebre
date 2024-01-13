@@ -19,22 +19,22 @@
 					<div class="col-12 col-md-6">
 						<label for="nombre" class="form-label">Nombre</label>
 						<input type="text"  name="nombre"  class="form-input" value="<%= locals.old && old.nombre %>">
-						<p><%= locals.errors && errors.nombre ? errors.nombre.msg : null %></p>
+						<p style="color:red"><%= locals.errors && errors.nombre ? errors.nombre.msg : null %></p>
 					</div>
 					<div class="col-12 col-md-6">
 						<label for="price" class="form-label">Apellido</label>
 						<input type="text" name="apellido"  class="form-input" value="<%= locals.old && old.apellido %>">
-						<p><%= locals.errors && errors.apellido ? errors.apellido.msg : null %></p>
+						<p style="color:red"><%= locals.errors && errors.apellido ? errors.apellido.msg : null %></p>
 					</div>
 					<div class="col-12 col-md-6">
 						<label for="email" class="form-label">Email</label>
 						<input type="email"  name="email"  class="form-input" value="<%= locals.old && old.email %>" >
-						<p><%= locals.errors && errors.email ? errors.email.msg : null %></p>
+						<p style="color:red"><%= locals.errors && errors.email ? errors.email.msg : null %></p>
 					</div>
 					<div class="col-12">
 						<label for="contraseña" class="form-label">Contraseña</label>
 						<input type="password" name="contraseña" class="form-input" value="<%= locals.old && old.contraseña %>">
-						<p><%= locals.errors && errors.contraseña ? errors.contraseña.msg : null %></p>
+						<p style="color:red"><%= locals.errors && errors.contraseña ? errors.contraseña.msg : null %></p>
 					</div>
 
 					<div class="col-12">
